@@ -1,4 +1,4 @@
-Project Title: Employee Skill Tracker
+# Project Title: Employee Skill Tracker
 
 👤 Student: [Saliev Yntymak]
 
