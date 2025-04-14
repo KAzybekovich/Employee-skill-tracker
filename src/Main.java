@@ -34,8 +34,6 @@ public class Main {
             System.out.println("8. Generate Reports");
             System.out.println("9. Export Data (CSV)");
             System.out.println("10. Import Data (CSV)");
-            System.out.println("11. Export Data (JSON)");
-            System.out.println("12. Import Data (JSON)");
 
             System.out.print("Choose an action: ");
             while (!scanner.hasNextInt()) {
@@ -46,7 +44,8 @@ public class Main {
             scanner.nextLine(); // consume newline
 
             switch (choice) {
-                case 1: // Add Employee
+                case 1:
+                    // Add new employee
                     System.out.print("Enter employee ID: ");
                     while (!scanner.hasNextInt()) {
                         System.out.print("Invalid input. Please enter a number: ");
@@ -72,14 +71,16 @@ public class Main {
                     employeeManager.addEmployee(new Employee(employeeId, name, email));
                     break;
 
-                case 2: // View Employees
+                case 2:
+                    // View all employees
                     System.out.println("Employees:");
                     for (Employee emp : employeeManager.getAllEmployees()) {
                         System.out.println(emp);
                     }
                     break;
 
-                case 3: // Add Skill to Employee
+                case 3:
+                    // Add skill to an employee
                     System.out.print("Enter employee ID to add skill: ");
                     while (!scanner.hasNextInt()) {
                         System.out.print("Invalid input. Please enter a number: ");
@@ -105,7 +106,8 @@ public class Main {
                     skillManager.addSkill(new Skill(empIdForSkill, empIdForSkill, skillName, level));
                     break;
 
-                case 4: // View Employee Skills
+                case 4:
+                    // View skills of a specific employee
                     System.out.print("Enter employee ID to view skills: ");
                     while (!scanner.hasNextInt()) {
                         System.out.print("Invalid input. Please enter a number: ");
@@ -120,7 +122,8 @@ public class Main {
                     }
                     break;
 
-                case 5: // Update Employee Info
+                case 5:
+                    // Update employee info
                     System.out.print("Enter employee ID to update: ");
                     while (!scanner.hasNextInt()) {
                         System.out.print("Invalid input. Please enter a number: ");
@@ -146,7 +149,8 @@ public class Main {
                     employeeManager.updateEmployee(updateId, newName, newEmail);
                     break;
 
-                case 6: // Delete Employee
+                case 6:
+                    // Delete employee
                     System.out.print("Enter employee ID to delete: ");
                     while (!scanner.hasNextInt()) {
                         System.out.print("Invalid input. Please enter a number: ");
@@ -157,14 +161,16 @@ public class Main {
                     employeeManager.deleteEmployee(deleteId);
                     break;
 
-                case 7: // Exit
+                case 7:
+                    // Save and exit
                     fileManager.saveEmployees(employeeManager.getAllEmployees());
                     fileManager.saveSkills(skillManager.getAllSkills());
                     System.out.println("Data saved. Exiting.");
                     running = false;
                     break;
 
-                case 8: // Generate Reports
+                case 8:
+                    // Generate reports
                     boolean reportMenu = true;
                     while (reportMenu) {
                         System.out.println("\nReports:");
@@ -226,19 +232,13 @@ public class Main {
                     break;
 
                 case 9:
-                    exportToCSV();
+                    // Export data to CSV
+                    exportToCSV(employeeManager, skillManager, fileManager);
                     break;
 
                 case 10:
-                    importFromCSV();
-                    break;
-
-                case 11:
-                    exportToJSON();
-                    break;
-
-                case 12:
-                    importFromJSON();
+                    // Import data from CSV
+                    importFromCSV(employeeManager, skillManager, fileManager);
                     break;
 
                 default:
@@ -251,25 +251,15 @@ public class Main {
         System.out.println("Goodbye!");
     }
 
-    private static void exportToCSV() {
+    private static void exportToCSV(EmployeeManager employeeManager, SkillManager skillManager, FileManager fileManager) {
         System.out.println("Exporting data to CSV...");
-        // Реализуйте логику экспорта данных в CSV файл
+        fileManager.exportToCSV(employeeManager.getAllEmployees(), skillManager.getAllSkills());
     }
 
-    private static void importFromCSV() {
+    private static void importFromCSV(EmployeeManager employeeManager, SkillManager skillManager, FileManager fileManager) {
         System.out.println("Importing data from CSV...");
-        // Реализуйте логику импорта данных из CSV файла
-    }
-
-    private static void exportToJSON() {
-        System.out.println("Exporting data to JSON...");
-        // Реализуйте логику экспорта данных в JSON файл
-    }
-
-    private static void importFromJSON() {
-        System.out.println("Importing data from JSON...");
-        // Реализуйте логику импорта данных из JSON файла
+        employeeManager.setEmployees(fileManager.importEmployeesFromCSV());
+        skillManager.setSkills(fileManager.importSkillsFromCSV());
     }
 }
-
 
