@@ -51,8 +51,8 @@ The project uses **Object-Oriented Programming (OOP)** principles and follows a 
 3. **Update Employee Info**
 4. **Delete Employee Record**
 5. **Generate Reports**
-6. **Export Data (CSV/JSON)**
-7. **Import Data (CSV/JSON)**
+6. **Export Data (CSV)**
+7. **Import Data (CSV)**
 
 ### 🧪 Input Validation
 
@@ -87,37 +87,37 @@ classDiagram
     class Main {
         +main()
     }
-#📊 Report Generation
+###📊 Report Generation
 generateEmployeeReport(): Displays total employees, total skills, average skills per employee, and more.
 
-#⚠️ Error Handling
+###⚠️ Error Handling
 Try-catch blocks for invalid input and file I/O errors.
 
 🔐 Data Export/Import
 CSV Export/Import: For saving and loading employee and skill data.
 
-#🧠 Algorithms
+###🧠 Algorithms
 📊 Report Generation
 Employee Report: Calculates total number of employees, total number of skills, and average number of skills per employee.
 
 🧩 Data Processing
 Uses ArrayList for storing employee records and skills.
 
-#💾 Data Structures
+###💾 Data Structures
 ArrayList: For employee and skill records.
 
 HashMap: For managing employee skill assignments.
 
 File: For storing persistent data in text files.
 
-# 🧩 Modules Overview
+### 🧩 Modules Overview
 Module                    Description
 Employee Management	      CRUD operations, file I/O, display
 Skill Management	         Assigning and managing employee skills
 Report Generation	        Generating employee and skill reports
 Data Export/Import	       Exporting and importing data to/from CSV
 
-# 🔍 Example Use Cases
+###🔍 Example Use Cases
 🧪 Add New Employee
 ADD EMPLOYEE - 1
 Name: John Doe
@@ -135,14 +135,14 @@ Format: CSV
 File: employees.csv
 
 
-# 📁 Files Used
+### 📁 Files Used
 employees.txt — Stores employee records.
 
 skills.txt — Stores employee skills.
 
 reports.txt — Stores generated reports.
 
-# ✅ Run Instructions
+### ✅ Run Instructions
 Open the project in your IDE (e.g., IntelliJ IDEA).
 
 Run Main.java.
@@ -153,7 +153,7 @@ Choose options to add, update, view, or delete employee records.
 
 Export and import data using CSV/JSON options.
 
-# 📌 Notes
+### 📌 Notes
 Ensure that the text files (employees.txt, skills.txt, reports.txt) are located in the same directory as the program.
 
 Preloaded data (e.g., employee records) can be modified directly in the text files.
