@@ -87,57 +87,32 @@ classDiagram
     class Main {
         +main()
     }
-# 📊 Report Generation
-`generateEmployeeReport()`: Displays total employees, total skills, average skills per employee, and more.
+### 🔍 Example Use Cases
 
-## ⚠️ Error Handling
-Try-catch blocks for invalid input and file I/O errors.
-
-## 🔐 Data Export/Import
-- **CSV Export/Import**: For saving and loading employee and skill data.
-- **JSON Export/Import**: Efficient handling of employee records.
-
-## 🧠 Algorithms
-### 📊 Report Generation
-Employee Report: Calculates total number of employees, total number of skills, and average number of skills per employee.
-
-### 🧩 Data Processing
-Uses `ArrayList` for storing employee records and skills.
-
-## 💾 Data Structures
-- **ArrayList**: For employee and skill records.
-- **HashMap**: For managing employee skill assignments.
-- **File**: For storing persistent data in text files.
-
-## 🧩 Modules Overview
-| Module                 | Description                                          |
-|------------------------|------------------------------------------------------|
-| **Employee Management** | CRUD operations, file I/O, display                   |
-| **Skill Management**    | Assigning and managing employee skills               |
-| **Report Generation**   | Generating employee and skill reports                |
-| **Data Export/Import**  | Exporting and importing data to/from CSV/JSON        |
-
-## 🔍 Example Use Cases
 ### 🧪 Add New Employee
 - **ADD EMPLOYEE - 1**
-  - Name: John Doe
-  - Email: johndoe@example.com
-  - Skills: Java, C++
+  - **Name**: John Doe
+  - **Email**: johndoe@example.com
+  - **Skills**: Java, C++
 
 ### 🧪 View Employee Information
 - **VIEW EMPLOYEE - 2**
-  - Employee ID: 1
-  - Skills: Java, C++, Python
+  - **Employee ID**: 1
+  - **Skills**: Java, C++, Python
 
 ### 🧪 Export Data (CSV/JSON)
 - **EXPORT DATA - 6**
-  - Format: CSV
-  - File: `employees.csv`
+  - **Format**: CSV
+  - **File**: employees.csv
+
+---
 
 ## 📁 Files Used
 - **employees.txt** — Stores employee records.
 - **skills.txt** — Stores employee skills.
 - **reports.txt** — Stores generated reports.
+
+---
 
 ## ✅ Run Instructions
 1. Open the project in your IDE (e.g., IntelliJ IDEA).
@@ -146,9 +121,9 @@ Uses `ArrayList` for storing employee records and skills.
    - Choose options to add, update, view, or delete employee records.
    - Export and import data using CSV/JSON options.
 
+---
+
 ## 📌 Notes
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
-
-
