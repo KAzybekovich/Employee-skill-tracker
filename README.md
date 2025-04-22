@@ -15,7 +15,6 @@ The **Employee Skill Tracker** is a Java-based console application designed to m
 - Track skills associated with each employee.
 - Generate reports and export/import data in CSV and JSON formats.
 
-The project uses **Object-Oriented Programming (OOP)** principles and follows a **modular design** for scalability and maintainability.
 
 ---
 
@@ -105,15 +104,14 @@ Example Use Cases
   - **File**: employees.csv
 
 ---
-
-### 📁 Files Used
+📁 Files Used
 - **employees.txt** — Stores employee records.
 - **skills.txt** — Stores employee skills.
 - **reports.txt** — Stores generated reports.
 
 ---
 
-### ✅ Run Instructions
+✅ Run Instructions
 1. Open the project in your IDE (e.g., IntelliJ IDEA).
 2. Run `Main.java`.
 3. Interact via CLI:
@@ -122,7 +120,12 @@ Example Use Cases
 
 ---
 
-### 📌 Notes
+📌 Notes
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
+
+
+
+
+
