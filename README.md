@@ -107,14 +107,14 @@ classDiagram
 
 ---
 
-## 📁 Files Used
+### 📁 Files Used
 - **employees.txt** — Stores employee records.
 - **skills.txt** — Stores employee skills.
 - **reports.txt** — Stores generated reports.
 
 ---
 
-## ✅ Run Instructions
+### ✅ Run Instructions
 1. Open the project in your IDE (e.g., IntelliJ IDEA).
 2. Run `Main.java`.
 3. Interact via CLI:
@@ -123,7 +123,7 @@ classDiagram
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
