@@ -87,20 +87,19 @@ classDiagram
     class Main {
         +main()
     }
-### 🔍 Example Use Cases
+Example Use Cases
 
-### 🧪 Add New Employee
+🧪 Add New Employee
 - **ADD EMPLOYEE - 1**
   - **Name**: John Doe
   - **Email**: johndoe@example.com
   - **Skills**: Java, C++
-
-### 🧪 View Employee Information
+ 🧪 View Employee Information
 - **VIEW EMPLOYEE - 2**
   - **Employee ID**: 1
   - **Skills**: Java, C++, Python
 
-### 🧪 Export Data (CSV/JSON)
+🧪 Export Data (CSV/JSON)
 - **EXPORT DATA - 6**
   - **Format**: CSV
   - **File**: employees.csv
