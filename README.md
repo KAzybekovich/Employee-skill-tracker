@@ -7,7 +7,7 @@
 
 ---
 
-## 📘 Project Description
+##📘 Project Description
 
 The **Employee Skill Tracker** is a Java-based console application designed to manage employees and their skills. It enables users to:
 
