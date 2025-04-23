@@ -7,7 +7,7 @@
 
 ---
 
-##📘 Project Description
+## 📘 Project Description
 
 The **Employee Skill Tracker** is a Java-based console application designed to manage employees and their skills. It enables users to:
 
@@ -45,13 +45,17 @@ The **Employee Skill Tracker** is a Java-based console application designed to m
 
 **Main Menu:**
 
-1. **Add New Employee**
-2. **View Employees**
-3. **Update Employee Info**
-4. **Delete Employee Record**
-5. **Generate Reports**
-6. **Export Data (CSV)**
-7. **Import Data (CSV)**
+Menu:
+1.**Add Employee**
+2.**View Employees**
+3.**Add Skill to Employee**
+4.**View Employee Skills**
+5. **Update Employee Info**
+6. **Delete Employee**
+7. **Exit**
+8. **Generate Reports**
+9. **Export Data (CSV)**
+10. **Import Data (CSV)**
 
 ### 🧪 Input Validation
 
@@ -124,6 +128,10 @@ Example Use Cases
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
+
+
+
+
 
 
 
