@@ -90,32 +90,42 @@ classDiagram
     class Main {
         +main()
     }
-Example Use Cases
+####Example Use Cases
 
-🧪 Add New Employee
-- **ADD EMPLOYEE - 1**
-  - **Name**: John Doe
-  - **Email**: johndoe@example.com
-  - **Skills**: Java, C++
- 🧪 View Employee Information
-- **VIEW EMPLOYEE - 2**
-  - **Employee ID**: 1
-  - **Skills**: Java, C++, Python
+**🧪 Add New Employee**
 
-🧪 Export Data (CSV/JSON)
-- **EXPORT DATA - 6**
-  - **Format**: CSV
-  - **File**: employees.csv
+**ADD EMPLOYEE - 1**
+
+- **Name**: John Doe
+- **Email**: johndoe@example.com
+- **Skills**: Java, C++
+
+🧪 **View Employee Information**
+
+**VIEW EMPLOYEE - 2**
+
+- **Employee ID**: 1
+- **Skills**: Java, C++, Python
+
+🧪 **Export Data (CSV/JSON)**
+
+**EXPORT DATA - 6**
+
+- **Format**: CSV
+- **File**: employees.csv
 
 ---
-📁 Files Used
+
+### 📁 Files Used
+
 - **employees.txt** — Stores employee records.
 - **skills.txt** — Stores employee skills.
 - **reports.txt** — Stores generated reports.
 
 ---
 
-✅ Run Instructions
+### ✅ Run Instructions
+
 1. Open the project in your IDE (e.g., IntelliJ IDEA).
 2. Run `Main.java`.
 3. Interact via CLI:
@@ -124,10 +134,12 @@ Example Use Cases
 
 ---
 
-📌 Notes
+### 📌 Notes
+
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
+
 
 
 
