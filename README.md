@@ -128,6 +128,8 @@ Example Use Cases
 - Ensure that the text files (`employees.txt`, `skills.txt`, `reports.txt`) are located in the same directory as the program.
 - Preloaded data (e.g., employee records) can be modified directly in the text files.
 - Feel free to fork, contribute, or suggest improvements!
+![Превью проекта](https://raw.githubusercontent.com/KAzybekovich/Employee-skill-tracker/master/2025-04-23_12-26-33.png)
+
 
 
 
